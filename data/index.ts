@@ -107,19 +107,19 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "Collaborating with Jaelos was an absolute pleasure. He uphold his professionalism, promptness and dedication to delivering exceptional results were evident throughout our project",
       name: "Michael Johnson",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
       name: "Michael Johnson",
       title: "Director of AlphaStream Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "Astonishing performance and work, Jaelos laid out the game plan with understanding to our specification and was able to carry out the work in due time",
       name: "Michael Johnson",
       title: "Director of AlphaStream Technologies",
     },
@@ -180,22 +180,22 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Mobile Web Dev - Personal Portfolio",
+      desc: "Designed and developed mobile web app",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Freelance Mock Web Dev Project",
+      desc: "Understand the work flow of deploying modern functionalities such as payment gateway, SEO, dynamic website.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
       title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      desc: "Developed and maintained user-facing features using modern frontend technologies with React, Next.js with other supported UI framework such as shadcn/ui and Aceternity/UI.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -205,13 +205,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "www.github.com/angjaelos"
     },
     {
       id: 2,
       img: "/twit.svg",
+      link: "www.x.com/angjaelos"
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "www.linkedin.com/angjaelos"
     },
   ];
