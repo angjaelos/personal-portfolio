@@ -21,7 +21,7 @@ export const BentoGrid = ({
       <div
         className={cn(
           // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-          "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+          "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-6 mx-auto",
           className
         )}
       >
@@ -51,6 +51,15 @@ export const BentoGridItem = ({
 }) => {
 
     const [copied, setCopied] = useState(false)
+
+    const defaultOptions = {
+        loop: copied,
+        autoplay: copied,
+        animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        }
+    }
 
     const handleCopy = () => {
         navigator.clipboard.writeText('angjaelos@gmail.com')
@@ -98,7 +107,7 @@ export const BentoGridItem = ({
                     />
                 </BackgroundGradientAnimation>
             )}
-            <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 lg:p-10')}>
+            <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10')}>
                 <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
                     {description}
                 </div>
@@ -130,15 +139,10 @@ export const BentoGridItem = ({
             )}
             {id === 6 && (
                 <div className="mt-5 relative">
-                    <div className={`absolute -bottom-5 right-0 `}>
-                        <Lottie options={{
-                            loop: copied,
-                            autoplay: copied,
-                            animationData,
-                            rendererSettings: {
-                                preserveAspectRatio: 'xMidYMid slice',
-                            }
-                        }}/>
+                    <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                        }`}
+                    >
+                        <Lottie options={defaultOptions} height={200} width={200}/>
                     </div>
                     <MagicButton 
                         title={copied ? 'Email copied': 'Copy my email'} 
