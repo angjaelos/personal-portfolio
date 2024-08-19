@@ -6,7 +6,7 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jaelos's Portfolio",
+  title: "Jaelos",
   description: "Modern React Next.js Portfolio",
 };
 
@@ -16,16 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
+    <html lang="en" suppressHydrationWarning>
+        <head>
+            <link rel="icon" href="/1F601_BeamingSmilingEyes_1024px_01_01 1.png" sizes="any" />
+        </head>
+        <body className={inter.className}>
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="dark"
+                enableSystem
+                disableTransitionOnChange
+            >
             {children}
-          </ThemeProvider></body>
+          </ThemeProvider>
+        </body>
     </html>
   );
 }
