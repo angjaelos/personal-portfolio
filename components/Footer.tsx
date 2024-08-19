@@ -1,5 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { motion } from "framer-motion";
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import { HeroHighlight, Highlight } from "./ui/HeroHighlight";
@@ -22,7 +22,7 @@ const Footer = () => {
         <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple ">your</span>
             <HeroHighlight className="mt-4">
-                <div
+                <motion.div
                     initial={{
                     opacity: 0,
                     y: 20,
@@ -40,7 +40,7 @@ const Footer = () => {
                     <Highlight className="mt-5 heading lg:max-w-[45vw] text-black dark:text-white ">
                     digital presence to the next level?
                     </Highlight>
-                </div>
+                </motion.div>
             </HeroHighlight>
         </h1>
         <div className="text-white-200 md:mt-10 my-5 text-center">
