@@ -4,6 +4,7 @@ import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import { HeroHighlight, Highlight } from "./ui/HeroHighlight";
 import { FlipWords } from "./ui/FlipWord";
+import { MotionDiv } from "./ui/FramerMotion";
 
 const Footer = () => {
     const words = ["anytime", "anywhere", "today"]
@@ -22,7 +23,7 @@ const Footer = () => {
         <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple ">your</span>
             <HeroHighlight className="mt-4">
-                <motion.div
+                <MotionDiv
                     initial={{
                     opacity: 0,
                     y: 20,
@@ -40,7 +41,7 @@ const Footer = () => {
                     <Highlight className="mt-5 heading lg:max-w-[45vw] text-black dark:text-white ">
                     digital presence to the next level?
                     </Highlight>
-                </motion.div>
+                </MotionDiv>
             </HeroHighlight>
         </h1>
         <div className="text-white-200 md:mt-10 my-5 text-center">
@@ -64,7 +65,7 @@ const Footer = () => {
           {socialMedia.map((info) => (
             <div
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="w-10 h-10 cursor-pointer flex j ustify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
                 <a href={info.link} target="_blank">
                     <img src={info.img} alt="icons" width={20} height={20}  />

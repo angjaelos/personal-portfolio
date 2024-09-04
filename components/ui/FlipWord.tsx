@@ -1,7 +1,8 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
+import React, { useCallback, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { MotionDiv } from "./FramerMotion";
 
 export const FlipWords = ({
   words,
@@ -35,7 +36,7 @@ export const FlipWords = ({
         setIsAnimating(false);
       }}
     >
-      <motion.div
+      <MotionDiv
         initial={{
           opacity: 0,
           y: 10,
@@ -77,7 +78,7 @@ export const FlipWords = ({
             {letter}
           </motion.span>
         ))}
-      </motion.div>
+      </MotionDiv>
     </AnimatePresence>
   );
 };

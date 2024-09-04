@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
+import { MotionDiv } from "./FramerMotion";
 
 export const HeroHighlight = ({
   children,

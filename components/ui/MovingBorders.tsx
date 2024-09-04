@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+import { MotionDiv } from "./FramerMotion";
 
 export function Button({
   borderRadius = "1.75rem",
@@ -124,7 +125,7 @@ export const MovingBorder = ({
           ref={pathRef}
         />
       </svg>
-      <motion.div
+      <MotionDiv
         style={{
           position: "absolute",
           top: 0,
@@ -134,7 +135,7 @@ export const MovingBorder = ({
         }}
       >
         {children}
-      </motion.div>
+      </MotionDiv>
     </>
   );
 };

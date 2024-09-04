@@ -4,7 +4,7 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { FlipWords } from './ui/FlipWord'
 import { HeroHighlight, Highlight } from './ui/HeroHighlight'
-import {motion} from "framer-motion"
+import { MotionDiv } from './ui/FramerMotion'
 
 const Hero = () => {
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words='Transforming Concepts into Seamless User Experiences'/>
                 <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                     <HeroHighlight>
-                        <motion.div
+                        <MotionDiv
                             initial={{
                             opacity: 0,
                             y: 20,
@@ -53,7 +53,7 @@ const Hero = () => {
                             <Highlight className="text-black dark:text-white">
                                 a React Next.js Developer based in Singapore
                             </Highlight>
-                        </motion.div>
+                        </MotionDiv>
                     </HeroHighlight>
                 </div>
                 <a href='#about'>

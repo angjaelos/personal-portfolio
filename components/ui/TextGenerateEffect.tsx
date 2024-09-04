@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { MotionDiv } from "./FramerMotion";
 
 export const TextGenerateEffect = ({
   words,
@@ -32,7 +33,7 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <MotionDiv ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
@@ -46,7 +47,7 @@ export const TextGenerateEffect = ({
             </motion.span>
           );
         })}
-      </motion.div>
+      </MotionDiv>
     );
   };
 
